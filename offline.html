@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8d1530" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>UCCHR is Offline</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+        background: linear-gradient(145deg, #f5edef, #fff);
+        color: #291d21;
+        font:
+          16px system-ui,
+          -apple-system,
+          "Segoe UI",
+          sans-serif;
+      }
+      .card {
+        width: min(520px, 100%);
+        padding: 34px;
+        border: 1px solid #ead7dc;
+        border-radius: 22px;
+        background: #fff;
+        box-shadow: 0 20px 60px #5415251f;
+        text-align: center;
+      }
+      .logo {
+        width: 88px;
+        height: 88px;
+        object-fit: contain;
+        border-radius: 50%;
+      }
+      h1 {
+        margin: 16px 0 8px;
+        color: #8d1530;
+      }
+      p {
+        line-height: 1.6;
+        color: #62565a;
+      }
+      .button {
+        display: inline-flex;
+        margin-top: 12px;
+        padding: 12px 18px;
+        border-radius: 10px;
+        background: #8d1530;
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .status {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 18px;
+        font-size: 13px;
+      }
+      .status::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: #c43737;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <img class="logo" src="assets/images/pwa-icon-192.png" alt="UCC logo" />
+      <h1>Connection unavailable</h1>
+      <p>
+        UCCHR protects live employee, attendance, payroll, and biometric
+        information by keeping it on the secure server. Reconnect to the
+        internet or organization network, then try again.
+      </p>
+      <a class="button" href="launch.html">Try Again</a>
+      <div class="status">
+        No private records are stored on this offline screen.
+      </div>
+    </main>
+  </body>
+</html>

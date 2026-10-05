@@ -1,0 +1,78 @@
+{
+  "id": "./",
+  "name": "UCCHR Biometric Attendance & Payroll System",
+  "short_name": "UCCHR",
+  "description": "Secure employee records, biometric attendance, schedules, overtime, payroll, payslips, and employee self-service for Ubay Community College.",
+  "lang": "en-PH",
+  "dir": "ltr",
+  "start_url": "./launch.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f6f1f2",
+  "theme_color": "#8d1530",
+  "categories": ["business", "productivity", "education"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "assets/images/pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/pwa-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/pwa-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Administrator Login",
+      "short_name": "Admin",
+      "description": "Open the HR and payroll administrator login.",
+      "url": "./index.php",
+      "icons": [
+        {
+          "src": "assets/images/pwa-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Employee Login",
+      "short_name": "Employee",
+      "description": "Open the employee self-service portal.",
+      "url": "./employee-login.php",
+      "icons": [
+        {
+          "src": "assets/images/pwa-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Biometric Terminal",
+      "short_name": "Terminal",
+      "description": "Open the biometric terminal controller.",
+      "url": "./biometric.php",
+      "icons": [
+        {
+          "src": "assets/images/pwa-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}

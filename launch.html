@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#8d1530" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="application-name" content="UCCHR" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="UCCHR" />
+    <title>Open UCCHR</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/images/pwa-icon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/images/pwa-icon-192.png" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/mobile.css" />
+  </head>
+  <body class="login-page pwa-launch-page">
+    <main class="login-stage">
+      <section
+        class="login-card pwa-launch-card"
+        aria-labelledby="launch-title"
+      >
+        <img
+          class="site-logo"
+          src="assets/images/ucclogo.jpg"
+          alt="Ubay Community College logo"
+        />
+        <div class="login-title">
+          <h1 id="launch-title">UCCHR</h1>
+          <span>Biometric Attendance &amp; Payroll System</span>
+        </div>
+        <p class="employee-login-intro">
+          Choose the secure area you want to open.
+        </p>
+        <nav class="pwa-launch-actions" aria-label="UCCHR access options">
+          <a class="btn btn-neon" href="index.php">Administrator Login</a>
+          <a class="btn btn-outline" href="employee-login.php"
+            >Employee Login</a
+          >
+          <a class="btn btn-outline" href="biometric.php">Biometric Terminal</a>
+        </nav>
+        <button
+          class="btn btn-outline pwa-install-button pwa-login-install"
+          type="button"
+          data-pwa-install
+          hidden
+        >
+          Install UCCHR App
+        </button>
+        <details class="pwa-install-help">
+          <summary>Install on phone or PC</summary>
+          <p>
+            <strong>Computer or Android:</strong> open this page in Chrome or
+            Edge and choose Install app from the browser menu.
+          </p>
+          <p>
+            <strong>iPhone or iPad:</strong> open in Safari, tap Share, then Add
+            to Home Screen.
+          </p>
+          <p>
+            Installation requires an HTTPS website address (or localhost on this
+            computer). On local Wi-Fi, open the phone address in your browser;
+            full app installation may not be available over HTTP.
+          </p>
+        </details>
+        <p class="employee-access-note">
+          A live secure connection to the UCCHR server is required for
+          attendance, payroll, and biometric operations.
+        </p>
+      </section>
+    </main>
+    <script src="assets/js/pwa.js" defer></script>
+  </body>
+</html>
